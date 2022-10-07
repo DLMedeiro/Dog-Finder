@@ -8,7 +8,7 @@ function About() {
       <p>We are disrupting everything!</p>
       <p>We have been featured on lots of blogs.</p>
       <p>Want to work with us? Get in line.</p>
-      <Link to="/dogs">Whiskey</Link>
+      <Link to="/">Whiskey</Link>
     </div>
   );
 }

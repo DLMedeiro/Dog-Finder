@@ -17,7 +17,7 @@ function Details() {
         <h2>Doggo</h2>
         <h2>{name}</h2>
       </div>
-      <Link to="/dogs">Home</Link>
+      <Link to="/">Home</Link>
     </div>
   );
 }

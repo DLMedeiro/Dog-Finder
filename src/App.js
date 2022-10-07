@@ -2,40 +2,22 @@ import "./App.css";
 import React from "react";
 import { defaultProps } from "./DefaultProps";
 // import Nav from "./Nav";
-import {
-  Route,
-  Routes,
-  BrowserRouter,
-  useRoutes,
-  Outlet,
-} from "react-router-dom";
+import { useRoutes } from "react-router-dom";
 import DogList from "./DogList";
+import Details from "./Details";
 
 function App() {
   let routes = useRoutes([
     {
       path: "/",
-      element: <div>Hello Index</div>,
+      element: <DogList dogs={defaultProps} />,
     },
     {
-      path: "games",
-      element: <Games />,
-    },
-    {
-      path: "dogList",
-      element: <DogList />,
+      path: "/:name",
+      element: <Details />,
     },
   ]);
   return routes;
 }
 
 export default App;
-
-const Games = () => {
-  return (
-    <div className="Games">
-      <div>This is the Games pages</div>
-      <Outlet />
-    </div>
-  );
-};

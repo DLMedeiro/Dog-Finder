@@ -1,12 +1,12 @@
 import React from "react";
 import "./DogList.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import "./images/whiskey.jpg";
 // import "./images/duke.jpg";
 // import "./images/perry.jpg";
 // import "./images/tubby.jpg";
 
-function DogList() {
+function DogList({ dogs }) {
   // function DogList({ dogs }) {
   // let dogInfo = dogs.dogs.dogs;
   // const headShot = () => {};
@@ -14,11 +14,10 @@ function DogList() {
   return (
     <div>
       <h1>Home Page</h1>
-      {/* <div>
+      <Link to="/About">About</Link>
+      <div>
         <h2>Doggies</h2>
-        <div>
-          <NavLink to="/About">About</NavLink>
-        </div>
+        <div></div>
         {dogs.map((d) => (
           <div className="doggies">
             <h3
@@ -28,13 +27,13 @@ function DogList() {
                 width: "200px",
               }}
             >
-              <NavLink to={`/dogs/${d.name}`}>{d.name}</NavLink>
+              <Link to={`/${d.name}`}>{d.name}</Link>
             </h3>
             <h3>{d.src}</h3>
             <img src={d.src} alt={d.name} />
           </div>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 }
