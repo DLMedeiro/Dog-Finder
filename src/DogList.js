@@ -15,6 +15,9 @@ function DogList({ dogs }) {
       <h1>Home Page</h1>
       <div>
         <h2>Doggies</h2>
+        <div>
+          <Link to="dogs/Whiskey">Whiskey</Link>
+        </div>
         {dogs.map((d) => (
           <div className="doggies">
             <h3
