@@ -1,28 +1,28 @@
 import "./App.css";
 import React from "react";
-import { defaultProps } from "./DefaultProps";
-// import Nav from "./Nav";
-import { useRoutes } from "react-router-dom";
+
+import { Routes, Route, Link } from "react-router-dom";
 import DogList from "./DogList";
 import Details from "./Details";
+import Nav from "./Nav";
 
-function App() {
-  let routes = useRoutes([
-    {
-      path: "/",
-      element: <DogList dogs={defaultProps} />,
-    },
-    {
-      path: "/dogs/:id/:name",
-      element: <Details dogs={defaultProps} />,
-    },
-    // Correct way to redirect?
-    // {
-    //   path: "*",
-    //   element: <DogList dogs={defaultProps} />,
-    // },
-  ]);
-  return routes;
+function App({ dogs }) {
+  return (
+    <div>
+      <nav>
+        <Nav dogs={dogs} />
+      </nav>
+      <div>
+        <Routes>
+          <Route path="/" element={<DogList dogs={dogs} />}></Route>
+          <Route
+            path="/dogs/:id/:name"
+            element={<Details dogs={dogs} />}
+          ></Route>
+        </Routes>
+      </div>
+    </div>
+  );
 }
 
 export default App;
