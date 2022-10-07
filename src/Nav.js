@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Nav.css";
 
 function Nav({ dogs }) {
   let navLinks = dogs.map((d) => (

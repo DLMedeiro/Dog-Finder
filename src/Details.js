@@ -10,7 +10,6 @@ function Details({ dogs }) {
   // Created an id to match the index of the default props to connect information on the dog selected
 
   const selectedDog = dogs[id];
-  console.log(selectedDog.src);
 
   return (
     <div>

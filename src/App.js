@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import DogList from "./DogList";
 import Details from "./Details";
 import Nav from "./Nav";

@@ -1,16 +1,8 @@
 import React from "react";
 import "./DogList.css";
 import { Link } from "react-router-dom";
-import whiskey from "./images/whiskey.jpg";
-// import "./images/duke.jpg";
-// import "./images/perry.jpg";
-// import "./images/tubby.jpg";
 
 function DogList({ dogs }) {
-  // function DogList({ dogs }) {
-  // let dogInfo = dogs.dogs.dogs;
-  // const headShot = () => {};
-
   return (
     <div>
       <h1>Home Page</h1>
