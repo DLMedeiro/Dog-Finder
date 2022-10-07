@@ -1,5 +1,9 @@
-/* .doggies {
-    height: 200px;
-    width: 200px;
-
-} */
+.doggies a {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}

@@ -18,17 +18,17 @@ function DogList({ dogs }) {
         <h2>Doggies</h2>
         {dogs.map((d) => (
           <div className="doggies">
-            <div
+            <Link
               style={{
                 height: "200px",
                 width: "200px",
                 backgroundSize: "cover",
                 backgroundImage: `url(${d.src})`,
               }}
-            ></div>
-            <div>
-              <Link to={`/dogs/${d.id}/${d.name}`}>{d.name}</Link>
-            </div>
+              to={`/dogs/${d.id}/${d.name}`}
+            >
+              {d.name}
+            </Link>
           </div>
         ))}
       </div>
