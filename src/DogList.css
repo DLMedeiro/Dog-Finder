@@ -1,9 +1,18 @@
 .doggies a {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-direction: row;
+    width: 200px;
     text-decoration: none;
     color: white;
     font-size: 2rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.doggies {
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
 }
