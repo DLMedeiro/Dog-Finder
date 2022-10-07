@@ -13,9 +13,14 @@ function App() {
       element: <DogList dogs={defaultProps} />,
     },
     {
-      path: "/:name",
-      element: <Details />,
+      path: "/dogs/:id/:name",
+      element: <Details dogs={defaultProps} />,
     },
+    // Correct way to redirect?
+    // {
+    //   path: "*",
+    //   element: <DogList dogs={defaultProps} />,
+    // },
   ]);
   return routes;
 }

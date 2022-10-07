@@ -1,7 +1,7 @@
 import React from "react";
 import "./DogList.css";
 import { Link } from "react-router-dom";
-// import "./images/whiskey.jpg";
+import whiskey from "./images/whiskey.jpg";
 // import "./images/duke.jpg";
 // import "./images/perry.jpg";
 // import "./images/tubby.jpg";
@@ -14,23 +14,21 @@ function DogList({ dogs }) {
   return (
     <div>
       <h1>Home Page</h1>
-      <Link to="/About">About</Link>
       <div>
         <h2>Doggies</h2>
-        <div></div>
         {dogs.map((d) => (
           <div className="doggies">
-            <h3
+            <div
               style={{
-                backgroundImage: `url(${d.src})`,
                 height: "200px",
                 width: "200px",
+                backgroundSize: "cover",
+                backgroundImage: `url(${d.src})`,
               }}
-            >
-              <Link to={`/${d.name}`}>{d.name}</Link>
-            </h3>
-            <h3>{d.src}</h3>
-            <img src={d.src} alt={d.name} />
+            ></div>
+            <div>
+              <Link to={`/dogs/${d.id}/${d.name}`}>{d.name}</Link>
+            </div>
           </div>
         ))}
       </div>

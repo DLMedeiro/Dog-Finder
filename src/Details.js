@@ -5,17 +5,22 @@ import { Link, useParams } from "react-router-dom";
 // import "./images/perry.jpg";
 // import "./images/tubby.jpg";
 
-function Details() {
-  const { name } = useParams();
+function Details({ dogs }) {
+  const { id, name } = useParams();
+  // Created an id to match the index of the default props to connect information on the dog selected
 
-  //   console.log(name);
+  const selectedDog = dogs[id];
+  console.log(selectedDog.src);
 
   return (
     <div>
-      <h1>Details Page</h1>
+      <h1>{name}'s Details Page</h1>
+      <img src={selectedDog.src} alt={selectedDog.name}></img>
       <div>
-        <h2>Doggo</h2>
-        <h2>{name}</h2>
+        <h2>Age: {selectedDog.age}</h2>
+        {selectedDog.facts.map((f) => (
+          <li>{f}</li>
+        ))}
       </div>
       <Link to="/">Home</Link>
     </div>
