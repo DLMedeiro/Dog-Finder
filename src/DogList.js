@@ -16,16 +16,16 @@ function DogList({ dogs }) {
       <div>
         <h2>Doggies</h2>
         <div>
-          <Link to="dogs/Whiskey">Whiskey</Link>
+          <Link to="/About">About</Link>
         </div>
         {dogs.map((d) => (
           <div className="doggies">
             <h3
-            // style={{
-            //   backgroundImage: `url(${d.src})`,
-            //   height: "200px",
-            //   width: "200px",
-            // }}
+              style={{
+                backgroundImage: `url(${d.src})`,
+                height: "200px",
+                width: "200px",
+              }}
             >
               <Link to={`/dogs/${d.name}`}>{d.name}</Link>
             </h3>
