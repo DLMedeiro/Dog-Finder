@@ -4,6 +4,7 @@ App that routes to different dogs and displays information on that dog when youâ
 
 Practice navigating React Router V6
 
+[Check it out here](https://dlmedeiro.github.io/Dog-Finder)
 
 ## Available Scripts
 
