@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Dog-Finder/static/css/main.7dd293a3.css",
+    "main.js": "/Dog-Finder/static/js/main.abefb66e.js",
+    "static/js/787.22c7daf2.chunk.js": "/Dog-Finder/static/js/787.22c7daf2.chunk.js",
+    "static/media/whiskey.jpg": "/Dog-Finder/static/media/whiskey.7650f3f2b68e4bebacaa.jpg",
+    "static/media/tubby.jpg": "/Dog-Finder/static/media/tubby.9c06bf82b050f49b0a43.jpg",
+    "static/media/duke.jpg": "/Dog-Finder/static/media/duke.a2a605e8b55545c21c28.jpg",
+    "static/media/perry.jpg": "/Dog-Finder/static/media/perry.26aa759591c047a1c58c.jpg",
+    "index.html": "/Dog-Finder/index.html",
+    "main.7dd293a3.css.map": "/Dog-Finder/static/css/main.7dd293a3.css.map",
+    "main.abefb66e.js.map": "/Dog-Finder/static/js/main.abefb66e.js.map",
+    "787.22c7daf2.chunk.js.map": "/Dog-Finder/static/js/787.22c7daf2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7dd293a3.css",
+    "static/js/main.abefb66e.js"
+  ]
+}
