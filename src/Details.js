@@ -21,7 +21,7 @@ function Details({ dogs }) {
           <li>{f}</li>
         ))}
       </div>
-      <Link to="/">Home</Link>
+      <Link to="/dogs">Home</Link>
     </div>
   );
 }
